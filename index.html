@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личная панель запуска</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="hero">
+        <p class="eyebrow">AI Цех · личный проект</p>
+        <h1>Личная панель запуска</h1>
+        <p class="hero-text">
+          Моя точка старта: коротко, понятно и без лишней сложности.
+        </p>
+      </header>
+
+      <section class="card profile-card" aria-labelledby="about-title">
+        <p class="card-label">Обо мне</p>
+        <h2 id="about-title">Я начинаю собирать свои AI-инструменты</h2>
+        <p>
+          Учусь превращать идеи в небольшие работающие проекты и постепенно
+          осваиваю новые возможности.
+        </p>
+      </section>
+
+      <section class="card goal-card" aria-labelledby="goal-title">
+        <p class="card-label">Моя цель на AI Цех</p>
+        <h2 id="goal-title">Создать первый полезный web-проект</h2>
+        <p>
+          Сделать понятную личную страницу, запустить её локально и увидеть
+          результат в браузере.
+        </p>
+      </section>
+
+      <section class="card steps-card" aria-labelledby="steps-title">
+        <p class="card-label">Маршрут</p>
+        <h2 id="steps-title">3 следующих шага</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <span>Посмотреть, как устроены HTML, CSS и JavaScript.</span>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <span>Заменить стартовый текст на свой.</span>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <span>Опубликовать страницу в интернете.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="card status-card" aria-labelledby="status-title">
+        <div>
+          <p class="card-label">Статус проекта</p>
+          <h2 id="status-title">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="status-text">В работе</span>
+          </h2>
+          <p id="status-description">Первый проект уже начал свой путь.</p>
+        </div>
+
+        <label class="status-switch">
+          <input id="status-toggle" type="checkbox" role="switch">
+          <span class="switch-track" aria-hidden="true">
+            <span class="switch-handle"></span>
+          </span>
+          <span class="switch-label">Следующий шаг готов</span>
+        </label>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
